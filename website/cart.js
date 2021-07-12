@@ -12,9 +12,14 @@ for (var i = 0; i <= addToCartButtons.length; i++) {
 	}
 
 
+function ClearClicked() {
+	var cartItems = document.getElementsByClassName('cart-items')[0]
+    	while (cartItems.hasChildNodes()) {
+        	cartItems.removeChild(cartItems.firstChild)
+   	 }
+}
 
-
-//Event listener for click of add to cart button 
+//click of add to cart button 
 
 function addToCartClicked(event) {
     var button = event.target
