@@ -21,7 +21,7 @@
 		</ul>
 	</nav>
 	<br>
-
+​
 	<h3>Our Products</h3>
 <div class="row">
   <div class="column">
@@ -37,7 +37,7 @@
 	</div>
   </div>
   
-
+​
   <div class="column">
 	<div class="card">
 	  <img class="shop-item-image" src="images/anchors.webp" alt="anchors" style="width:100%">
@@ -77,7 +77,7 @@
 	</div>
   </div>
   
-
+​
   <div class="column">
 	<div class="card">
 	  <img class="shop-item-image" src="images/drill.jpeg" alt="drill" style="width:100%">
@@ -105,7 +105,7 @@
   <div class="column">
 	<div class="card">
 	  <img class="shop-item-image" src="images/wheels.webp" alt="caster" style="width:100%">
-	  <h1 class="shop-item-title">TITAN 4-in Polyurethane Swivel Caster</h1>
+	  <h1 class="shop-item-title">TITAN 4-in Polyurethane Swivel Caster</h1>
 	  <p class="price">$10.98</p>
 	  <p>Waxman offers a complete line of casters and wheels
 	 for a variety of consumer and industrial needs. These items are high quality and built with durability and versatility in mind. 250 lb. 
@@ -118,14 +118,14 @@
   <div class="column">
 	<div class="card">
 	  <img class="shop-item-image" src="images/bracket.webp" alt="brace" style="width:100%">
-	  <h1 class="shop-item-title">National Hardware 1-1/2-in Steel Zinc-Plated Corner Brace</h1>
+	  <h1 class="shop-item-title">National Hardware 1-1/2-in Steel Zinc-Plated Corner Brace</h1>
 	  <p class="price">$3.48</p>
 	  <p>Used for reinforcing inside of right angle corner joints. Product design allows for quick and easy repair of general household items. 
 	  Double wide brace. Screw holes are countersunk.</p>
 	  <p><button class="AddTOCartButton">Add to Cart</button></p>
 	</div>
   </div>
-
+​
   <div class="column">
 	<div class="card">
 	  <img class="shop-item-image" src="images/tape.webp" alt="tape" style="width:100%">
@@ -137,7 +137,7 @@
 	</div>
 	</div>
 </div>
-
+​
 <div class="row">
   <div class="column">
 	<div class="card">
@@ -149,18 +149,18 @@
 	  <p><button class="AddTOCartButton">Add to Cart</button></p>
 	</div>
 	</div>
-
+​
 	<div class="column">
 	<div class="card">
 	  <img class="shop-item-image" src="images/switch.webp" alt="switch" style="width:100%">
-	  <h1 class="shop-item-title" >Lutron Claro 15-Amp Single-Pole Rocker Light Switch, White</h1>
+	  <h1 class="shop-item-title" >Lutron Claro 15-Amp Single-Pole Rocker Light Switch, White</h1>
 	  <p class="price">$8.78</p>
 	  <p>Large paddle switch that turns lights or fans ON/OFF Compatible with dimmable LED/CFL, halogen, and incandescent bulbs Easily replaces existing 
 	  switch and installs in as little as 15 minutes (no neutral wire required)</p>
 	  <p><button class="AddTOCartButton">Add to Cart</button></p>
 	</div>
 	</div>
-
+​
 	<div class="column">
 	<div class="card">
 	  <img class="shop-item-image"  src="images/nut.webp" alt="nut" style="width:100%">
@@ -173,7 +173,7 @@
 	</div>
 	</div>
 </div>
-
+​
 	<div class="column">
 	<div class="card">
 	  <img class="shop-item-image" src="images/box.jpg" alt="box" style="width:100%">
@@ -189,7 +189,7 @@
 	<div class="column">
 	<div class="card">
 	  <img class="shop-item-image" src="images/led.webp" alt="light bulbs" style="width:100%">
-	  <h1 class="shop-item-title">GE Relax 60-Watt EQ A19 Soft White Dimmable LED Light Bulb (4-Pack)</h1>
+	  <h1 class="shop-item-title">GE Relax 60-Watt EQ A19 Soft White Dimmable LED Light Bulb (4-Pack)</h1>
 	  <p class="price">$11.98</p>
 	  <p>60 Watt replacement using only 8.5 Watts (800 lumens).
 		Rated to last 13 years based on 3 hours per day use.
@@ -197,9 +197,23 @@
 	  <p><button class="AddTOCartButton">Add to Cart</button></p>
 	</div>
 	</div>
-
+​
   </body>
   <footer>
+		<script>
+		function theAlert() {
+					alert("Thank you for your purchase! Click OK to see your receipt. ");
+				}
+            printDivCSS = new String ('<link href="styles.css" rel="stylesheet" type="text/css">')
+            function printDiv(divId) {
+                window.frames["print_frame"].document.body.innerHTML=printDivCSS + document.getElementById(divId).innerHTML;
+                window.frames["print_frame"].window.focus();
+                window.frames["print_frame"].window.print();
+				
+				
+            }
+        </script>
+  <div id="div1">
 	<h2><img src="images/cart.png" width= 50>CART</h2>
             
             
@@ -218,13 +232,16 @@
            
             <div class="cart-total">
                 <span class="cart-total-title">Total</span>
-                <span class="cart-total-price">$TBD</span>
+                <span class="cart-total-price">$0</span>
             </div>
             
+   </div>      
             
-            
-            <button>PURCHASE</button>
+            <button class ="printbtn" type="button" value="Purchase" onclick="theAlert();printDiv('div1');" "printDiv('div1')"  >PURCHASE</button>
 	  <button class="clear-btn" type="button" value="Remove All" onclick="ClearClicked()">CLEAR CART</button>
+	          <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+	  <button class ="printbtn" type="button" value="Print Cart" onclick="printDiv('div1')">PRINT CART</button>
   </footer>
-
+​
+</html>
 </html>
