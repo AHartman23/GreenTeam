@@ -149,6 +149,7 @@ function addItemToCart(name, price, imageSrc) {
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     //item was added to cart -> decrease inventory
    decInventory(name)
+	cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
 
 
