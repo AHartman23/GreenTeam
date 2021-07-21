@@ -207,10 +207,10 @@ function decInventory(name){
     } else if (name == "HART 6-Piece Screwdriver Set with Comfort Grip Handle"){
     	stock4--
     	document.getElementById("stock4").innerHTML = stock4
-    } else if (name == "Hyper Tough 5 Amp Corded Drill, 3/8 inch Keyless Chuck, Variable Speed, Lock-on Feature & Belt Clip"){
+    } else if (name == "Hyper Tough 5 Amp Corded Drill, 3/8 inch Keyless Chuck, Variable Speed, Lock-on Feature and Belt Clip"){
     	stock5--
     	document.getElementById("stock5").innerHTML = stock5
-    } else if (name == "Hillman The Fastener Center Steel Wire Nail & Brad Assortment Kit (266 Pcs.)"){
+    } else if (name == "Hillman The Fastener Center Steel Wire Nail and Brad Assortment Kit (266 Pcs.)"){
     	stock6--
     	document.getElementById("stock6").innerHTML = stock6
     } else if (name == "TITAN 4-in Polyurethane Swivel Caster"){
@@ -258,10 +258,10 @@ if (name == "Bulldog Hardware 5/16 in. 18 x 3 in. Carriage Bolt (2 Pack)"){
     } else if (name == "HART 6-Piece Screwdriver Set with Comfort Grip Handle"){
     	stock4++
     	document.getElementById("stock4").innerHTML = stock4
-    } else if (name == "Hyper Tough 5 Amp Corded Drill, 3/8 inch Keyless Chuck, Variable Speed, Lock-on Feature & Belt Clip"){
+    } else if (name == "Hyper Tough 5 Amp Corded Drill, 3/8 inch Keyless Chuck, Variable Speed, Lock-on Feature and Belt Clip"){
     	stock5++
     	document.getElementById("stock5").innerHTML = stock5
-    } else if (name == "Hillman The Fastener Center Steel Wire Nail & Brad Assortment Kit (266 Pcs.)"){
+    } else if (name == "Hillman The Fastener Center Steel Wire Nail and Brad Assortment Kit (266 Pcs.)"){
     	stock6++
     	document.getElementById("stock6").innerHTML = stock6
     } else if (name == "TITAN 4-in Polyurethane Swivel Caster"){
