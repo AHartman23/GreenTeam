@@ -63,6 +63,12 @@ for (var i = 0; i <= addToCartButtons.length; i++) {
 	var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
 	}
+	
+var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
 }
 
 // CONFIRMATION MESSAGE
