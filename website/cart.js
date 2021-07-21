@@ -65,14 +65,18 @@ for (var i = 0; i <= addToCartButtons.length; i++) {
 	}
 }
 
+// CONFIRMATION MESSAGE
 function removeCartItem(event) {
-    
+  if (confirm('Are you sure you want to remove this item?')) {
     var buttonClicked = event.target
-	inventoryHelper(event)
-    buttonClicked.parentElement.parentElement.remove()
+    inventoryHelper(event)
+    buttonClicked.parentElement.parentElement.remove();
     updateCartTotal()
-    
+  } else {
+    return false;
+  }
 }
+
 //assists in increasing inventory when item is removed from cart
 function inventoryHelper(event){
 	 var button = event.target
