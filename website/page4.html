@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Nuts and Bolts</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <a href="index.html">
+		<img src="images/logo.png" alt="Logo" title="Home">
+	</a>
+    <h1>Nuts and Bolts</h1> 
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="page1.html">Contact Us </a></li>
+			<li><a href="page2.html">FAQ</a></li>
+			<li><a href="page3.html">Products</a></li>
+			
+		</ul>
+	</nav>
+	<br>
+
+	<form>
+  <div class="container">
+    <h2>Register</h2>
+    <p>Please fill in this form to create a Nuts and Bolts account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our Terms & Privacy.</p>
+	<script>
+		function registerAlert() {
+			alert("Thank you for registering!");
+		}
+	</script>
+	
+	<button onclick="registerAlert()"  class="registerbtn">Register</button>
+	
+    
+  </div>
+  
+  <div class="container">
+    <p>Already have an account? <a href="page6">Sign in</a>.</p>
+	<br>
+	<p>Need to create an employee account? <a href="page5.html">Click here!</a>.</p>
+  </div>
+</form>
+	
+	
+
+  </body>
+</html>
