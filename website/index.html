@@ -18,6 +18,8 @@
 			<li><a href="page2.html">FAQ</a></li>
 			<li><a href="page3.html">Products</a></li>
 			<li><a href="page6.html">Sign In</a></li>
+			<li><a href="page8.html">Weekly Sales</a></li>
+			
 			
 		</ul>
 	</nav>
@@ -25,13 +27,73 @@
 
 	<h3>About Us</h3>
 	<p>
-	Nuts and Bolts is a family run hardware store that has been selling the highest quality fasteners at the lowest prices for over 50 years! We are based in Columbus Ohio, Go Bucks!
+	Nuts and Bolts is a family run hardware store that has been selling the highest quality products at the lowest prices for over 50 years! <br>
+	Founded in 1955, Nuts and Bolts continues to provide a great selection of products to customers. With 10 locations to pick from, 
+	we have central Ohio's hardware needs covered!
 	</p>
-	<img src="images/Hardware-Store.jpg" width="500">
-	
-	<p>Want to register for a Nuts and Bolts account? <a href="page4.html">Click here!</a></p>
-	
+
 	<br>
+	
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/Hardware-Store.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/Hardware-Store2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/Hardware-Store3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br>
+<p>Want to register for a Nuts and Bolts account? <a href="page4.html">Click here!</a></p>
 	
   </body>
 </html>
